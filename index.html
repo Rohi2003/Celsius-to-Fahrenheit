@@ -21,10 +21,11 @@
     <script>
         function convert(){
         let celsiusVal = Number(document.getElementById("cm").value)
-        let fahrenheitVal = (celsiusVal-32)*5/9
+        let fahrenheitVal = (celsiusVal*9/5)+32
         let result = document.getElementById("result")
         result.innerHTML = fahrenheitVal.toFixed(1)
         }
     </script>
 </body>
+
 </html>
